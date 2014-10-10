@@ -12,16 +12,16 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script>
-			$(function(){
-				$dollarQuote = $('.js-quote');
-				renderQuote = function(data) {
-					dollarQuote.html(data)
-				}
-				getQuote= function () {
-					$.get('https://api.github.com/zen',renderQuote)
-				}
-			})
-			$('.new-quote').click(function(){getQuote();})		
+				$(function(){
+					dollarQuote = $('.js-quote');
+					renderQuote = function(data) {
+						dollarQuote.html(data)
+					}
+					getQuote= function() {
+						$.get('https://api.github.com/zen',renderQuote)
+					}
+				})
+				$('.new-quote').click(function(){getQuote();})		
 		</script>
 	</head>
 	<body class="container">
