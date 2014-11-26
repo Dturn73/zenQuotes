@@ -1,35 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Zen Quotes Page</title>
-		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script>
-				$(function(){
-					dollarQuote = $('.js-quote');
-					renderQuote = function(data) {
-						dollarQuote.html(data)
-					}
-					getQuote= function() {
-						$.get('https://api.github.com/zen',renderQuote)
-					}
-				})
-				$('.new-quote').click(function(){getQuote();})		
-		</script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="quote.js"></script>
 	</head>
-	<body class="container">
+	<body>
+		<h1>Hello World!</h1>
 		
-		<h1>Zen Quotes Page</h1>
-				<div class="js-quote well">
-					This is where the quote will go!
-				</div>
-			<button class="new-quote btn-lg btn-warning">Get Quote</button>
 	</body>
 </html>
